@@ -5,11 +5,11 @@ import { MenuNavigate } from "../../../routes/MenuNavigate";
 
 function Navbar(){
   return(
-    <div className='m-3 container-fluid d-flex justify-content-evenly align-items-center'>
+    <div className='navegacion p-3 container-fluid d-flex justify-content-evenly align-items-center'>
 
               <a href="/" className='text-white text-decoration-none d-flex justify-content-center'>
                 <img style={{width:"60px", marginLeft:"6px"}} src={"../imgs/target.png"} alt="target" />
-                <h1 className='m-2 align-self-center'>ImpactGuns</h1>
+                <h2 className='m-2 align-self-center'>ImpactGuns</h2>
               </a>
 
                 <ul className="d-flex flex-row justify-content-around align-items-center list-unstyled">
@@ -24,11 +24,11 @@ function Navbar(){
                             //el id y el path deben ser iguales para que al usar filer en ItemListContainer, verifique si ambos son iguales y entonces hacer el filtrado.
                             MenuNavigate.map(({ id, path, title }) => (
                             <Link className="dropdown-item" key={id} to={path}>
-                              {title}
+                              {title} <hr className="dropdown-divider"/>
                             </Link>
                             )) 
+                            
                         }
-                      <hr className="dropdown-divider"/>
                       </li>
                     </ul>
                   </li>
@@ -38,11 +38,12 @@ function Navbar(){
                       Ammo
                     </a>
                     <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Assault Rifes</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Sub Machine Guns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Light Machine Guns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Shotguns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Sniper Rifle</a></li>
+                      <li><a className="dropdown-item" href="#">Rifle Ammo</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Shotgun Ammo</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Assault Rifle Ammo</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Sub Machine Gun Ammo</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Handgun Ammo</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Rimfire Ammo</a></li>
                     </ul>
                   </li>
 
@@ -51,24 +52,14 @@ function Navbar(){
                       Accessories
                     </a>
                     <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Assault Rifes</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Sub Machine Guns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Light Machine Guns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Shotguns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Sniper Rifle</a></li>
-                    </ul>
-                  </li>
-
-                  <li className="me-4 dropdown">
-                    <a className="text-white text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Clothes
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Assault Rifes</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Sub Machine Guns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Light Machine Guns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Shotguns</a><hr className="dropdown-divider"/></li>
-                      <li><a className="dropdown-item" href="#">Sniper Rifle</a></li>
+                      <li><a className="dropdown-item" href="#">Magazines</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Holsters</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Optics & Sights</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Lasers</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Lights</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Reloading</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Bipods & Tripods</a><hr className="dropdown-divider"/></li>
+                      <li><a className="dropdown-item" href="#">Snap Caps</a><hr className="dropdown-divider"/></li>
                     </ul>
                   </li>
 

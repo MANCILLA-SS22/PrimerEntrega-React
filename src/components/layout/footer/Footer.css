@@ -103,6 +103,7 @@ ul {
   float: left;
   width: 50%;
   margin-bottom: 12px;
+
 }
 .footer-widget ul li a:hover{
   color: #ff5e14;
@@ -110,6 +111,9 @@ ul {
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 .subscribe-form {
   position: relative;
@@ -146,15 +150,20 @@ ul {
 }
 .copyright-text p a{
   color: #ff5e14;
+  font-size: 14px;
+  font-family: sans-serif;
 }
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
+  
 }
 .footer-menu li:hover a{
   color: #ff5e14;
 }
 .footer-menu li a {
-  font-size: 14px;
+  font-size: 14px; 
   color: #878787;
+  font-family: sans-serif;
+  text-decoration: none;
 }

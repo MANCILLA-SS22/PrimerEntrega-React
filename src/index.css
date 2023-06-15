@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 #res{
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Montserrat', sans-serif;
@@ -13,5 +14,6 @@
 }
 
 body{
-  background-color: #272727;
+  
+  padding: 0%;
 }

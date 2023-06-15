@@ -12,7 +12,7 @@ function CartContainer() {
 
   return (
     <div>
-        <h1>Carritoooo</h1>
+        <h1>Aqui van los productos agregados al carrito</h1>
         <button onClick={realizarCompra}>Comprar</button>
     </div>
   )

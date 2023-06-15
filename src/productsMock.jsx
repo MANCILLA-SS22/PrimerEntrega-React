@@ -2,12 +2,28 @@ export const products = [
     {
       "id": 1,
       "stuff": "weapon",
-      "title": "AK-12",
-      "price": 700,
       "stock": 5,
-      "description": "The AK-12, Avtomat Kalashnikova, 2012 (GRAU index 6P70) is a Russian assault rifle chambered in 5.45×39mm designed and manufactured by the Kalashnikov Concern (formerly Izhmash), making it the fifth generation of Kalashnikov rifles",
+      "description": "The AK-12, Avtomat Kalashnikova, 2012 (GRAU index 6P70) is a Russian assault rifle chambered in 5.45x39mm designed and manufactured by the Kalashnikov Concern (formerly Izhmash), making it the fifth generation of Kalashnikov rifles",
+      "completeDescription": "The most conspicuous identifying feature of the AN-94 is its magazine which is canted several degrees to the right of center (when viewed from a firing position). This design feature is necessary to accommodate the unique ammunition feed mechanism. The AN-94 is chambered in the same 5.45×39mm M74 cartridge as the AK-74, and it utilizes a rotating bolt to lock the action. Gennadiy Nikonov and his engineers used the Russian term Smeschennyi Impuls Svobodnogo Zatvora to describe the rifles method of operation, meaning recoil shifted pulse.",
       "category": "assault-riffle",
-      "img": "https://res.cloudinary.com/dndvrsb0w/image/upload/v1686697704/tfb-55_mgmqsb.jpg"
+      "img": "https://res.cloudinary.com/dndvrsb0w/image/upload/v1686697704/tfb-55_mgmqsb.jpg",
+
+      "rate": "⭐⭐⭐⭐⭐",
+      "priceNow": 809.00,
+      "priceBefore": 888.99,
+      "save": "(You save $79.99 )",
+      "credit": "Payments as low as $40.38 / month",
+      "stockDetail": "Very Low Stock",
+      "shipping": "Ships in 3 to 5 business days",
+      "sku": "860247000702",
+      "brand": "Riley Defense",
+      "manufacturerNumber": "RAK101",
+      "caliber": "7.62x39",
+      "title": "AK-12",
+      "rounds": "30",
+      "unitofMeasure": "Each",
+      "classification": "Firearm",
+      "interests": "AK-47 Rifles"
     },
     {
       "id": 2,

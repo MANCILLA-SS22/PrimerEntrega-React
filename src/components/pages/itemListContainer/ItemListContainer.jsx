@@ -14,28 +14,22 @@ function ItemListContainer(){
             return producto.category === categoryName;
         }); //console.log(productosFiltrados);
 
-        const tarea = new Promise((resolve, /* reject */) => {
-            // setTimeout(() => {
+        const tarea = new Promise((resolve) => {
+            setTimeout(() => {
                 resolve(categoryName ? productosFiltrados : products);
-            // }, 1000);
-            // reject("La promesa salio mal");
+            }, 1000);
         });
 
-        // Metodo 1: .then() y .catch()
-        tarea
-            .then((res) => {setItems(res)})
-            .catch((err) => {setItems(err)})
-
-        /* // Metodo 2: async-await
+        // Metodo 1: async-await
         async function getData(){
             try {
                 let res = await tarea;
-                setFrase(res);
+                setItems(res);
             }catch (err) {
                 console.log(err);
             }
         }
-        getData() */
+        getData()
 
     }, [categoryName]); 
 
@@ -49,7 +43,10 @@ export default ItemListContainer
 
 
 
-
+/* // Metodo 2: .then() y .catch()
+        tarea
+            .then((res) => {setItems(res)})
+            .catch((err) => {setItems(err)}) */
 
 /* export function ItemListContainer(res){ //Exportar nombrado
     const {x, z} = res;
